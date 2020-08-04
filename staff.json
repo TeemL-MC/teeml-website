@@ -1,0 +1,29 @@
+{
+	"servers":
+	[
+		{
+			"fullname": "LunaticMC",
+			"shortname":"LMC"
+		}, 
+		{
+			"fullname": "Endercraft",
+			"shortname": "END"
+		},
+		{
+			"fullname": "EmeraldMC",
+			"shortname": "EMC"
+		},
+		{
+			"fullname":"Mystic Realm",
+			"shortname":"MYR"
+		},
+		{
+			"fullname": "Techcraft",
+			"shortname": "TCH"
+		},
+		{
+			"fullname": "Skycraft",
+			"shortname": "SKY"
+		}
+	]
+}

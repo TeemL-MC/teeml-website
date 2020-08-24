@@ -1,3 +1,5 @@
+// Copyright © Lucy Poulton 2020. All rights reserved.
+
 const servers = [
 	{
 		"name": "Endercraft",

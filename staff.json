@@ -10,7 +10,7 @@
 			"ign": "mraid",
 			"discord": "mraid#0902",
 			"level": "MANAGER",
-			"roles": ["Endercraft Owner"]
+			"roles": ["Group Admin", "Endercraft Owner"]
 		},
 		{
 			"ign": "supersamurai999",

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.navbar {
+	width: 100%;
+	margin: auto;
+	height: 5rem;
+	position: absolute;
+	left: 0;
+    	top: 0;
+}
+
+body, .navbar {
+	background: linear-gradient(30deg, #ffffff, #eeeeee);
+}
+
+* {
+	font-family: 'Montserrat', sans-serif;
+	color: #555;
+	--gradient: linear-gradient(70deg, #b200ff, #f3798e, #ffd800);
+}
+
+.navbar > * {
+	height: calc(100% - 10px);
+	margin:5px;
+	text-align:center;
+	font-size: 1.5rem;
+}
+
+.navbar > div {
+	display: flex;
+	align-itrems: center;
+	justify-content: center;
+}
+
+.navbar > div > span {
+	padding: 1rem;
+}
+
+.container {
+	width: 100%;
+	position: absolute;
+	top: 5rem;
+	left: 0;
+}
+
+.not-small {
+	font-size: 1.5rem;
+}
+
+.big {
+	font-size: 2rem;
+}
+
+.bigger {
+	font-size: 3rem;
+	margin:0;
+}
+
+.title {
+	/*background-image: url("https://text2image.com/user_images/202008/text2image_A1626627_20200824_124818.png");*/
+	background: var(--gradient);
+	padding:30px 10px;
+}
+
+.title * {
+	color: white;
+}
+
+hr {
+	width: 20%;
+	border: 1px solid #888;
+}
+
+.flowbox {
+	display: flex;
+	flex-flow: wrap;
+	align-itrems: center;
+	justify-content: center;
+	margin-bottom: 32px;
+}
+
+.flowbox > div {
+	padding: 10px;
+	margin: 0.7rem;
+	width: 25rem;
+	border-radius: 10px;
+	box-shadow: 2px 5px 8px #ccc;
+	background: white;
+}
+
+.flowbox img {
+	float: right;
+}
+
+.flowbox th {
+	margin-right: 10px;
+	float: right;
+}
+.center {
+	text-align: center;
+}
+
+#staff > div {
+	width: 20rem;
+}

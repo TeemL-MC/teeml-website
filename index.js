@@ -1,7 +1,7 @@
 // Copyright © Lucy Poulton 2020. All rights reserved.
 
 const servers = {
-	"ECN": {
+	"END": {
 		"name": "Endercraft",
 		"shortname": "Endercraft",
 		"image": "https://cdn.discordapp.com/icons/740665741098877019/7fcceeaa49753a4d078aba6f257065dd.png?size=64",

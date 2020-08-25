@@ -36,7 +36,7 @@ const servers = {
 	"LMC": {
 		"name": "Loading...",
 		"shortname": "Loading",
-		"image": "https://cdn.discordapp.com/icons/740450739398377553/527ecc206990c6250152360d6f63f6e4.png?size=64",
+		"image": "https://cdn.discordapp.com/icons/740450739398377553/f50d22e7058d447c4ed3eaa3548ca7eb.png?size=64",
 		"ip": "Not available yet",
 		"website": "Not available yet",
 		"discord": "https://discord.gg/s6wNbu"

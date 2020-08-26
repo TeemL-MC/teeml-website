@@ -107,3 +107,14 @@ hr {
 #staff > div {
 	width: 20rem;
 }
+
+#serverstaff > div {
+	width: 17rem;
+}
+
+#serverstaff img {
+	float: revert;
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 5px
+};

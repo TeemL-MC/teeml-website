@@ -47,6 +47,16 @@ const servers = {
 	}
 }
 
+const staffLevels = {
+	"BUILDER": 1,
+	"HELPER": 2,
+	"MODERATOR": 3,
+	"ADMIN": 4,
+	"DEVELOPER": 5,
+	"MANAGER": 6,
+	"GROUP": 7	
+}
+
 const staffUrl = "https://teeml-api.endercraft.co";
 
 function parseServer(server) {
@@ -71,6 +81,14 @@ function parseServer(server) {
 			</div>`;
 }
 
+function parseServerBox(server) {
+	if (server == "GRP") return "";
+	return `<div id="serverstaff-${server}">
+			<p class="not-small" style="text-align:center">${servers[server].name}</p>
+		</div>
+		`
+}
+
 function parseRoles(roles) {
 	let buffer = "";
 	for (let role of roles) {
@@ -79,23 +97,35 @@ function parseRoles(roles) {
 	return buffer.trimRight("<br />");
 }
 
-function parseUser(user) {
+function parseGroupStaff(user) {
 	return `<div>
 	<span class="not-small">${user.ign}</span><img src="https://cravatar.eu/avatar/${user.uuid}/64"> <br/>` +
 	(user.discord == "" ? "" : `<span>${user.discord}</span><br />`) +
 	parseRoles(user["roles"]) + "</div>";
 }
 
+function parseStaff(user, role) {
+	return `<p><img src="https://cravatar.eu/avatar/${user.uuid}/16">${user.ign}<span style="float:right">${role.title}</span></p>`;
+}
 async function getStaff() {
 	let data = await fetch(staffUrl);
 	var jsonData = await data.json();
 	console.log(jsonData);
 	for (let staff of jsonData["staff"]) {
-		document.getElementById("staff").innerHTML += await parseUser(staff);
+		let isGroupStaff = false;
+		for (let role of staff["roles"]) {
+			if (staffLevels[role.level] == staffLevels["GROUP"]) 
+				isGroupStaff = true;
+			else
+				document.getElementById(`serverstaff-${role.server}`).innerHTML += parseStaff(staff, role);
+		}
+		if (isGroupStaff) document.getElementById("staff").innerHTML += parseGroupStaff(staff);
+		
 	}
 }
 
-for (let server of Object.values(servers)) {
-	document.getElementById("servers").innerHTML += parseServer(server);
+for (let server in servers) {
+	document.getElementById("serverstaff").innerHTML += parseServerBox(server);
+	document.getElementById("servers").innerHTML += parseServer(servers[server]);
 }
 getStaff();

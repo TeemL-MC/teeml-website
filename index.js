@@ -59,6 +59,8 @@ const staffLevels = {
 
 const staffUrl = "https://teeml-api.endercraft.co";
 
+var stafflist = {};
+
 function parseServer(server) {
 	if (server.name == "TeemL") return "";
 	return `<div>
@@ -104,8 +106,8 @@ function parseGroupStaff(user) {
 	parseRoles(user["roles"]) + "</div>";
 }
 
-function parseStaff(user, role) {
-	return `<p><img src="https://cravatar.eu/avatar/${user.uuid}/16">${user.ign}<span style="float:right">${role.title}</span></p>`;
+function parseStaff(user, title) {
+	return `<p><img src="https://cravatar.eu/avatar/${user.uuid}/16">${user.ign}<span style="float:right">${title}</span></p>`;
 }
 async function getStaff() {
 	let data = await fetch(staffUrl);
@@ -116,15 +118,28 @@ async function getStaff() {
 		for (let role of staff["roles"]) {
 			if (staffLevels[role.level] == staffLevels["GROUP"]) 
 				isGroupStaff = true;
-			else
-				document.getElementById(`serverstaff-${role.server}`).innerHTML += parseStaff(staff, role);
+			else {
+				splitRole = role.title.split("-");
+				stafflist[role.server][parseStaff(staff, splitRole[0])] = splitRole[1] ?? 0;
+			}
 		}
 		if (isGroupStaff) document.getElementById("staff").innerHTML += parseGroupStaff(staff);
 		
 	}
+	for (let server in servers) {
+		// start by sorting the dict into an array
+		let splitList = [];
+		for (var key in stafflist[server]) {
+  			splitList.push([ key, stafflist[server][key] ])
+		}
+		splitList.sort( (x1, x2) => x2[1] - x1[1]);
+		for (let member of splitList) 
+			document.getElementById(`serverstaff-${server}`).innerHTML += member[0];
+	}
 }
 
 for (let server in servers) {
+	stafflist[server] = { };
 	document.getElementById("serverstaff").innerHTML += parseServerBox(server);
 	document.getElementById("servers").innerHTML += parseServer(servers[server]);
 }

@@ -94,7 +94,7 @@ function parseServerBox(server) {
 function parseRoles(roles) {
 	let buffer = "";
 	for (let role of roles) {
-		buffer += `<span>${servers[role.server].shortname} ${role.title}</span><br />` 
+		buffer += `<span>${servers[role.server].shortname} ${role.title.split("-")[0]}</span><br />` 
 	}
 	return buffer.trimRight("<br />");
 }

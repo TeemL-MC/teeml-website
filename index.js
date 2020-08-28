@@ -41,6 +41,14 @@ const servers = {
 		"website": "Not available yet",
 		"discord": "https://discord.gg/s6wNbu"
 	},
+	"APK": {
+		"name": "Angel's Peak",
+		"shortname": "Angel's Peak",
+		"image": "https://cdn.discordapp.com/icons/599367207155138580/66a53ac1b1277f80e49ddffc5ed8b370.png?size=64",
+		"ip": "Not available yet",
+		"website": "Not available yet",
+		"discord": "https://discord.gg/sMsKZV"
+	},
 	"GRP": {
 		"name": "TeemL",
 		"shortname": "Group"

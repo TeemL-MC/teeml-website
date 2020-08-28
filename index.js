@@ -23,7 +23,7 @@ const servers = {
 		"image": "https://cdn.discordapp.com/icons/706902644781875270/a44a1f42d4593fc1f4c64d363f8be9c5.png?size=64",
 		"ip": "play.skycraftcommunity.net",
 		"website": "https://skycraftcommunity.net",
-		"discord": "https://discord.gg/KVDTwFM"
+		"discord": "https://discord.skycraftcommunity.net"
 	},
 	"MYR": {
 		"name": "Mystic Realm",
@@ -65,7 +65,7 @@ const staffLevels = {
 	"GROUP": 7	
 }
 
-const staffUrl = "https://teeml-api.endercraft.co";
+const staffUrl = "https://api.teeml.net";
 
 var stafflist = {};
 

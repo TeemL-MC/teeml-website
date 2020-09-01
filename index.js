@@ -49,6 +49,14 @@ const servers = {
 		"website": "Not available yet",
 		"discord": "https://discord.gg/sMsKZV"
 	},
+	"LLS": {
+		"name": "LimitlessMC",
+		"shortname": "Limitless",
+		"image": "https://cdn.discordapp.com/icons/749568838454214668/92ecec48aebb49ee2117eed107314cd8.webp?size=64",
+		"ip": "Not available yet",
+		"website": "Not available yet",
+		"discord": "Not available yet"
+	},
 	"GRP": {
 		"name": "TeemL",
 		"shortname": "Group"

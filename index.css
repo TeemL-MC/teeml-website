@@ -122,4 +122,13 @@ hr {
 	display: inline-block;
 	vertical-align: middle;
 	padding-right: 5px
-};
+}
+
+a {
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+a:hover {
+	color: black;
+}

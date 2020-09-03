@@ -81,18 +81,18 @@ function parseServer(server) {
 	if (server.name == "TeemL") return "";
 	return `<div>
 				<span class="not-small center">${server.name}</span> 
-				<img src="${server.image}">
+				<img  src="${server.image}">
 				<table>
 					<tr>
-						<th>IP:</th>
+						<th><img class="icon" src="assets/svg/minecraft.svg"></th>
 						<td>${server.ip}</td>
 					</tr>
 					<tr>
-						<th>Website:</th>
+						<th><img class="icon" src="assets/svg/globe.svg"></th>
 						<td><a href="${server.website}">${server.website}</a></td>
 					</tr>
 					<tr>
-						<th>Discord: </th>
+						<th><img class="icon" src="assets/svg/discord.svg"></th>
 						<td><a href="${server.discord}">${server.discord}</a></td>
 					</tr>
 				</table>

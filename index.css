@@ -86,14 +86,19 @@ hr {
 .flowbox > div {
 	padding: 10px;
 	margin: 0.7rem;
-	width: 30rem;
+	width: 26rem;
 	border-radius: 10px;
 	box-shadow: 2px 5px 8px #ccc;
 	background: white;
 }
 
 .flowbox img {
-	float: right;
+	float:right;
+}
+
+.flowbox img.icon {
+	width:22px;
+	height:22px;
 }
 
 .flowbox th {
@@ -112,7 +117,7 @@ hr {
 	width: 17rem;
 }
 
-#serverstaff img {
+#serverstaff img, .flowbox img.icon {
 	float: revert;
 	display: inline-block;
 	vertical-align: middle;

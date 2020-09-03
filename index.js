@@ -117,13 +117,13 @@ function parseRoles(roles) {
 
 function parseGroupStaff(user) {
 	return `<div>
-	<span class="not-small">${user.ign}</span><img src="https://cravatar.eu/avatar/${user.uuid}/64"> <br/>` +
+	<span class="not-small">${user.ign}</span><img src="https://cravatar.eu/helmavatar/${user.uuid}/64"> <br/>` +
 	(user.discord == "" ? "" : `<span>${user.discord}</span><br />`) +
 	parseRoles(user["roles"]) + "</div>";
 }
 
 function parseStaff(user, title) {
-	return `<p><img src="https://cravatar.eu/avatar/${user.uuid}/16">${user.ign}<span style="float:right">${title}</span></p>`;
+	return `<p><img src="https://cravatar.eu/helmavatar/${user.uuid}/16">${user.ign}<span style="float:right">${title}</span></p>`;
 }
 async function getStaff() {
 	let data = await fetch(staffUrl);

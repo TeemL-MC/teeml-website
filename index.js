@@ -81,7 +81,7 @@ function parseServer(server) {
 	if (server.name == "TeemL") return "";
 	return `<div>
 				<span class="not-small center">${server.name}</span> 
-				<img  src="${server.image}">
+				<img class="round" src="${server.image}">
 				<table>
 					<tr>
 						<th><img class="icon" src="assets/svg/minecraft.svg"></th>

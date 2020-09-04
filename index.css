@@ -60,6 +60,10 @@ body, .navbar {
 	margin:0;
 }
 
+.round {
+	border-radius: 100%;
+}
+
 .title {
 	/*background-image: url("https://text2image.com/user_images/202008/text2image_A1626627_20200824_124818.png");*/
 	background: var(--gradient);

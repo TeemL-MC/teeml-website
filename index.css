@@ -121,6 +121,10 @@ hr {
 	width: 17rem;
 }
 
+#serverstaff p {
+	margin: 10px 0;
+}
+
 #serverstaff img, .flowbox img.icon {
 	float: revert;
 	display: inline-block;

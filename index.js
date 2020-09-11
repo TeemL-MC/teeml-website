@@ -49,6 +49,14 @@ const servers = {
 		"website": "Not available yet",
 		"discord": "Not available yet"
 	},
+	"ZEI": {
+		"name": "Zeil Network",
+		"shortname": "Zeil",
+		"image": "https://cdn.discordapp.com/icons/746515246226866347/f3123359801a9b8f48cd9715eedbd243.webp?size=64",
+		"ip": "mc.zeilmc.xyz",
+		"website": "Not available yet",
+		"discord": "https://invite.gg/zeilmc"
+	},
 	"GRP": {
 		"name": "TeemL",
 		"shortname": "Group"

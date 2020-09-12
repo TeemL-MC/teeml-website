@@ -60,7 +60,7 @@ const servers = {
 	"OPR": {
 		"name": "OPRealms",
 		"shortname": "OPRealms",
-		"image": "https//cdn.discordapp.com/icons/753196820079050763/0c42236d96e191586669a9448e6cc67e.webp?size=64",
+		"image": "https://cdn.discordapp.com/icons/753196820079050763/0c42236d96e191586669a9448e6cc67e.webp?size=64",
 		"ip": "play.oprealms.xyz",
 		"website": "Not available",
 		"discord": "https://discord.gg/U4UAKGQ"

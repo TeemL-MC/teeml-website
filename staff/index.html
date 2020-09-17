@@ -1,0 +1,57 @@
+<!-- Copyright © Lucy Poulton 2020. All rights reserved. -->
+<!DOCTYPE html>
+<head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<title>TeemL API Admin</title>
+	<link rel="stylesheet" type="text/css" href="../index.css">
+	<link rel="icon" type="image/png" href="../assets/png/teeml.png">
+     <script src="https://kit.fontawesome.com/c3d839ab31.js" crossorigin="anonymous"></script>
+     
+     <style>
+         .flowbox div {
+            flex-grow: 2;
+         }
+
+         .flowbox th {
+             float: unset;
+         }
+         .buttons {
+             float: left;
+         }
+         .buttons > span {
+             padding: 10px;
+         }
+
+         .navbar > div {
+            display: inherit;
+            justify-content: unset;
+         }
+
+         #stafftable td, #servertable td {
+             padding-left: 8px;
+             padding-right: 8px;
+         }
+     </style>
+</head>
+<body>
+	<div class="navbar"> 
+        <img style="float:left" src="../assets/png/teeml-long.png" />
+        <div>
+            <span class="buttons">
+                <span onclick="renderServers()">SERVERS</span>
+                <span onclick="renderStaff()">STAFF</span>
+            </span>
+            <span style="float:right">
+                API KEY <input type="password">
+            </span>
+        </div>
+    </div>
+	<div class="container flowbox" id="main">
+	</div>
+    <script src="../index.js"></script>
+        <script src="index.js"></script>
+        <script>
+            initStaff();
+        </script>
+</body>

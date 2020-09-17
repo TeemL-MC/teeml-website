@@ -115,10 +115,19 @@ function parseServerBox(server) {
 		`
 }
 
+function listRoles(roles) {
+	let buffer = []
+	roles.sort((x1, x2) => staffLevels[x2.level] - staffLevels[x1.level]);
+	for (let role of roles) {
+		buffer.push(`${servers[role.server].shortname} ${role.title.split("-")[0]}`);
+	}
+	return buffer;
+}
+
 function parseRoles(roles) {
 	let buffer = "";
-	for (let role of roles) {
-		buffer += `<span>${servers[role.server].shortname} ${role.title.split("-")[0]}</span><br />` 
+	for (let role of listRoles(roles)) {
+		buffer += `<span>${role}</span><br />` 
 	}
 	return buffer.trimRight("<br />");
 }
@@ -133,9 +142,13 @@ function parseGroupStaff(user) {
 function parseStaff(user, title) {
 	return `<p><img src="https://cravatar.eu/helmavatar/${user.uuid}/16">${user.ign}<span style="float:right">${title}</span></p>`;
 }
-async function getStaff() {
+async function getApiData() {
 	let data = await fetch(staffUrl);
-	var jsonData = await data.json();
+	return await data.json();
+}
+
+async function getStaff() {
+	var jsonData = await getApiData();
 	console.log(jsonData);
 	for (let staff of jsonData["staff"]) {
 		let isGroupStaff = false;
@@ -162,9 +175,11 @@ async function getStaff() {
 	}
 }
 
-for (let server in servers) {
-	stafflist[server] = { };
-	document.getElementById("serverstaff").innerHTML += parseServerBox(server);
-	document.getElementById("servers").innerHTML += parseServer(servers[server]);
+async function initHome() {
+	for (let server in servers) {
+		stafflist[server] = { };
+		document.getElementById("serverstaff").innerHTML += parseServerBox(server);
+		document.getElementById("servers").innerHTML += parseServer(servers[server]);
+	}
+	await getStaff();
 }
-getStaff();

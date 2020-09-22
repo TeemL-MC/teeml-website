@@ -25,14 +25,6 @@ const servers = {
 		"website": "https://skycraftcommunity.net",
 		"discord": "https://discord.skycraftcommunity.net"
 	},
-	"MYR": {
-		"name": "Mystic Realm",
-		"shortname": "Mystic Realm",
-		"image": "https://cdn.discordapp.com/icons/726081912392646736/89bd44627bef06a8aa9b145a4767dd41.png?size=64",
-		"ip": "play.mysticrealm.xyz",
-		"website": "https://mysticrealm.xyz",
-		"discord": "https://mysticrealm.xyz/discord"
-	},
 	"APK": {
 		"name": "Angel's Peak",
 		"shortname": "Angel's Peak",

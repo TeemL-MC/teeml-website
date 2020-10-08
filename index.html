@@ -1,49 +1,99 @@
 <!-- Copyright © Lucy Poulton 2020. All rights reserved. -->
 <!DOCTYPE html>
+
 <head>
 	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
 	<meta content="utf-8" http-equiv="encoding">
-	<meta name="description" content="Working together to create amazing things. We run Minecraft servers and do cool stuff.">
+	<meta name="description"
+		content="Working together to create amazing things. We run Minecraft servers and do cool stuff.">
 	<meta name="author" content="Lucy Poulton" />
 	<meta name="copyright" content="Lucy Poulton 2020 - All rights reserved" />
-	<meta name="robots" content="index"/>
-	<link rel="canonical" href="http://teeml.net/" />
-	
+	<meta name="robots" content="index" />
+	<link rel="canonical" href="https://teeml.net/" />
+
 	<title>TeemL</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link rel="icon" type="image/png" href="assets/png/teeml.png">
- 	<script src="https://kit.fontawesome.com/c3d839ab31.js" crossorigin="anonymous"></script>	
+	<script src="https://kit.fontawesome.com/c3d839ab31.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-	<div class="navbar"> 
+	<div class="navbar">
 		<img src="assets/png/teeml-long.png" />
 		<div style="float:right">
-			<span><a href="#">HOME</a></span>
-			<span><a href="#servers">SERVERS</a></span>
-			<span><a href="#staff">STAFF</a></span>
-			<span><a href="https://discord.gg/wq5VbXQ">DISCORD</a></span>
+			<span><a href="/">HOME</a></span>
+			<span><a href="/members">MEMBERS</a></span>
+			<span><a href="https://discord.teeml.net">DISCORD</a></span>
 		</div>
 	</div>
 	<div class="container">
 		<div class="title">
 			<p class="bigger" style="margin-bottom:10px">Working together to create amazing things.</p>
-			<span>If you've come from one of our recruitment posts, please join our Discord for more info.</span>
+			<span>TeemL has something on offer for every small to medium server owner.</span>
 		</div>
-		<!--SERVERS-->
-		<p style="text-align:center" class="big">SERVERS</p>
-		<div class="flowbox" id="servers"></div>
+		<p style="text-align:center;width:100%" class="big">LOOKING FOR A STAFF ROLE?</p>
+		<a style="text-align: center;width:100%; margin-bottom:2rem; display:block" 
+		class="not-small" href="https://apply.teeml.net/forum-8.html">CLICK HERE</a>
 		<hr>
+		<p style="text-align:center; margin-bottom:0.5rem" class="big">WELCOME</p>
+		<div style="text-align: center;width:100%; margin-bottom:2rem">AN INTRODUCTION FROM OUR MANAGER</div>
+		<div class="center" style="margin:0 5rem; font-size: 1.1rem; font-style: italic;">
+			Hey, thanks for checking us out! I've proudly been in charge of TeemL since its inception.
+			It's a wonderful place to come together and help each other out to all get our servers the best that they can.
+			I've made some great relationships with some wonderful and skilled people, as well as contributing to group projects.
+			TeemL isn't just about productivity, however - it's a great place to talk with like-minded people and enjoy time away from servers.
+			Feel free to join our Discord server and have a chat!
+		</div>
+		<br />
+		<div class="center">
+		- Lucy, group manager
+		</span>
+		<hr style="margin-top:2rem">
 
-		<!--STAFF-->
-		<p style="text-align:center" class="big">NETWORK STAFF</p>
-		<div class="flowbox" id="staff">
+		<p style="text-align:center; margin-bottom:0.5rem" class="big">WHAT WE OFFER</p>
+		<div style="text-align: center;width:100%; margin-bottom:2rem">JOIN DISCORD FOR MORE INFO</div>
+
+		<style>
+			.flowbox div {
+				padding:1rem; 
+				padding-top:inherit;
+			}
+		</style>
+		<div class="flowbox">
+			<div>
+				<p class="not-small">RECRUITMENT</p>
+				<span>Let us do the hard work for you. We can handle staff applications to any capacity you choose, from
+					simply forwarding on applications to filling empty spots on your team for you.</span>
+			</div>
+
+			<div>
+				<p class="not-small">PLUGINS</p>
+				<span>We have a number of specialist plugins available to our member servers. Or, if you need something
+					specific, our group developers will be happy to work with you to come up with something.
+				</span>
+			</div>
+			<div>
+				<p class="not-small">COMMUNITY</p>
+				<span>TeemL is a space for hardworking, dedicated server owners and staff to come together, both to help
+					with server work and to enjoy some time off-duty. We run regular events for all server staff.
+				</span>
+			</div>
+			<div>
+				<p class="not-small">ADVERTISING</p>
+				<span>We're currently working on plans for shared advertising - the details of this are still being confirmed,
+					but watch this space for more info!
+				</span>
+			</div>
+			<div>
+				<p class="not-small">HOSTING</p>
+				<span>We can host websites, bots, APIs and other small things, for both personal and server use, on our servers. 
+				</span>
+			</div>
 		</div>
-		<hr>
-		<p style="text-align:center" class="big">SERVER STAFF</p>
-		<div class="flowbox" id="serverstaff">
-			
+
+		<span style="float:left; padding: 0.5rem; font-size: 0.8rem">
+		Copyright © Lucy Poulton 2020. All rights reserved.
 		</div>
 		<script src="index.js"></script>
-		<script>initHome()</script>
 	</div>
 </body>

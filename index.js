@@ -76,15 +76,15 @@ function parseServer(server) {
 				<img class="round" src="${server.image}">
 				<table>
 					<tr>
-						<th><img class="icon" src="assets/svg/minecraft.svg"></th>
+						<th><img class="icon" src="/assets/svg/minecraft.svg"></th>
 						<td>${server.ip}</td>
 					</tr>
 					<tr>
-						<th><img class="icon" src="assets/svg/globe.svg"></th>
+						<th><img class="icon" src="/assets/svg/globe.svg"></th>
 						<td><a href="${server.website}">${server.website}</a></td>
 					</tr>
 					<tr>
-						<th><img class="icon" src="assets/svg/discord.svg"></th>
+						<th><img class="icon" src="/assets/svg/discord.svg"></th>
 						<td><a href="${server.discord}">${server.discord}</a></td>
 					</tr>
 				</table>

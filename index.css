@@ -82,7 +82,6 @@ hr {
 .flowbox {
 	display: flex;
 	flex-flow: wrap;
-	align-itrems: center;
 	justify-content: center;
 	margin-bottom: 32px;
 }
